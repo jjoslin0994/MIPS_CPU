@@ -40,7 +40,7 @@ module  RegisterFile(
         if(write_en) begin
             // When write_en is high write the write_data 
             // to the ram based on address write_address_0 
-            ram[write_address_0] = write_data;
+            ram[write_address_0] <= write_data;
         end
     end
     
